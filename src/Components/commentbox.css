@@ -1,0 +1,204 @@
+.comment-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80%;
+}
+
+.upvote-btn{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 0.5rem;
+    width: 2rem;
+    height:fit-content;
+    border-radius: 8px;
+
+    background-color: rgb(233, 233, 233);
+}
+
+.upvote-btn p{
+    font-weight: 500;
+    color: hsl(238, 40%, 52%);
+    margin: 0;
+}
+
+.upvote-btn i{
+    cursor: pointer;
+    color: hsl(239, 57%, 85%);
+}
+
+.upvote-btn i:hover{
+    color: hsl(238, 40%, 52%);
+}
+
+.comment-body{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.comment-main{
+    display: flex;
+    gap: 1rem;
+
+    background-color: white;
+    box-shadow: 0 0 20px rgb(226, 226, 226);
+
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+
+    border-radius: 5px;
+}
+
+.comment-head{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img{
+    width: 2rem;
+}
+
+.profile .name{
+    font-weight: 500;
+}
+
+.profile .postedat{
+    color: hsl(239, 57%, 85%);
+    font-weight: 400;
+}
+
+.profile span{
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+}
+
+.reply-btn{
+    color: hsl(238, 40%, 52%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.reply-btn span{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.reply-btn span:hover{
+    color: hsl(223, 19%, 93%);
+}
+
+.reply-btn .reply-delete{
+    color: hsl(358, 79%, 66%);
+}
+.reply-btn .reply-delete:hover{
+    color: hsl(357, 100%, 86%);
+}
+.comment-msg{
+    color: hsl(211, 10%, 45%);
+}
+
+.comment-msg .replyTo{
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.reply-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    border-left: 1px solid rgb(218, 218, 218);
+    
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.reply-wrapper .comment-wrapper{
+    width: 80%;
+}
+
+.edit-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.edit-box textarea{
+    resize: none;
+    cursor: pointer;
+
+    padding: 1rem;
+    width: 100%;
+    height:fit-content;
+    font-size: 18px;
+
+    border-radius: 5px;
+}
+
+.edit-box button{
+    cursor: pointer;
+    width: 8rem;
+    height: 3rem;
+
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color:hsl(238, 40%, 52%);
+
+    align-self: flex-end;
+}
+
+.edit-box button:hover{
+    background-color:hsl(239, 57%, 85%);
+}
+
+@media screen and (max-width:700px) {
+    .comment-main{
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    .upvote-btn{
+        width: 6.5rem;
+        flex-direction: row;
+    }
+    .reply-btn{
+        position: absolute;
+        right: 1rem;
+        bottom: 1.5rem;
+    }
+    .edit-box button{
+        width: 6rem;
+    }
+    .edit-box textarea{
+        height: 10rem;
+    }
+    .reply-wrapper .comment-wrapper{
+        width: 95%;
+    }
+}

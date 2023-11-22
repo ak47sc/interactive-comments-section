@@ -1,0 +1,82 @@
+.delete-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    
+    z-index: 10;
+    background-color: hsla(240, 7%, 63%, 0.5)
+}
+
+.dialog-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    border-radius: 10px;
+    width: 25rem;
+    background-color: white;
+}
+
+.dialog-box h2{
+    align-self: flex-start;
+}
+
+.dialog-box p{
+    color: hsl(211, 10%, 45%);
+}
+
+.dialog-box button{
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.delete-cancel{
+    background-color:hsl(211, 10%, 45%);
+}
+
+.delete-yes{
+    background-color:hsl(358, 79%, 66%);
+}
+
+.del-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.delete-yes:hover{
+    background-color:hsl(357, 100%, 86%);
+}
+
+.delete-cancel:hover{
+    background-color:hsl(210, 4%, 79%);
+}
+
+@media screen and (max-width:700px) {
+    .dialog-box{
+        width: 80%;
+        height: 15rem;
+    }
+}

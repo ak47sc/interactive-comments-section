@@ -1,0 +1,77 @@
+.replybox-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 80%;
+    height: fit-content;
+    border-radius: 5px;
+
+    background-color: white;
+    box-shadow: 0 0 20px rgb(226, 226, 226);
+}
+
+.replybox-wrapper img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.replybox-wrapper textarea{
+    resize: none;
+    cursor: pointer;
+
+    width: 80%;
+    height: 8rem;
+    margin: 0 1rem;
+    font-size: 18px;
+    
+    border-radius: 5px;
+}
+
+.replybox-wrapper button{
+    cursor: pointer;
+    width: 8rem;
+    height: 3rem;
+
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color:hsl(238, 40%, 52%);
+}
+
+.replybox-wrapper button:hover{
+    background-color:hsl(239, 57%, 85%);
+}
+
+@media screen and (max-width:700px) {
+    .replybox-wrapper{
+        width: 95%;
+    }
+    .replybox-wrapper{
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .replybox-wrapper button{
+        align-self: flex-end;
+        
+        width: 6rem;
+    }
+    .replybox-wrapper img{
+        position: absolute;
+        bottom: 1.5rem;
+        left: 2rem;
+    }
+    .replybox-wrapper textarea{
+        width: 95%;
+    }
+}
